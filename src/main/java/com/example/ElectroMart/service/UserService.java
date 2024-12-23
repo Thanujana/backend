@@ -4,10 +4,10 @@ import com.amazonaws.Response;
 import com.example.ElectroMart.dto.UserDto;
 
 public interface UserService {
-   void registerUsser(UserDto registrationRequest); 
+   Response registerUser(UserDto registrationRequest); 
    Response loginUSer(LoginRequest loginRequest);
 
    Response getAllUsers();
-   void LoginUser();
+   User getLoginUser();
    Response getUserInfoAndOrderHistory();
 }
