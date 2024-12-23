@@ -23,7 +23,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class User {
+public class
+User {
     @Id
     
     private String id;
@@ -48,7 +49,7 @@ public class User {
    @DBRef
    private Address address;
 
-@Field ("created_at")   
+   @Field ("created_at")
     private final LocalDateTime createdAt = LocalDateTime.now();
 
 }
